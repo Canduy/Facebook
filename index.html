@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="./asset/img/logo1.png" class="logo" alt="">
+            <ul>
+                <li><img src="./asset/img/notification.png" alt=""></li>
+                <li><img src="./asset/img/inbox.png" alt=""></li>
+                <li><img src="./asset/img/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="./asset/img/search.png" alt="search-box">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="./asset/img/profile-pic.jpg" alt="">
+            </div>
+        </div>
+        <!-- setting menu -->
+        <div class="setting-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="./asset/img/profile-pic.jpg" alt="">
+                    <div>
+                        <p>Can Duy</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="./asset/img/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to import the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="./asset/img/setting.png" alt="" class="settings-icon">
+                    <a href="#">Setting  & Privacy <img src="./asset/img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="./asset/img/help.png" alt="" class="settings-icon">
+                    <a href="#">Help & Support <img src="./asset/img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="./asset/img/display.png" alt="" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="./asset/img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="./asset/img/logout.png" alt="" class="settings-icon">
+                    <a href="#">Logout <img src="./asset/img/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- left-siderbar -->
+        <div class="left-siderbar">
+            <div class="imp-links">
+                <a href="#"><img src="./asset/img/news.png" alt="">Latest News</a>
+                <a href="#"><img src="./asset/img/friends.png" alt="">Friends</a>
+                <a href="#"><img src="./asset/img/group.png" alt="">Group</a>
+                <a href="#"><img src="./asset/img/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="./asset/img/watch.png" alt="">Watch</a>
+                <a href="#">See more</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="./asset/img/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="./asset/img/shortcut-2.png" alt="">Web Design course</a>
+                <a href="#"><img src="./asset/img/shortcut-3.png" alt="">Fullstack Development</a>
+                <a href="#"><img src="./asset/img/shortcut-4.png" alt="">Website Experts</a>
+            </div>
+        </div>
+        <!-- main-content-->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="./asset/img/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="./asset/img/member-1.png" alt="">
+                    <p>Trinh Ba Vuong</p>
+                </div>
+                <div class="story story3">
+                    <img src="./asset/img/member-2.png" alt="">
+                    <p>Pham Trung Hieu(Mõm)</p>
+                </div>
+                <div class="story story4">
+                    <img src="./asset/img/member-3.png" alt="">
+                    <p>N'golo Kante</p>
+                </div>
+                <div class="story story5">
+                    <img src="./asset/img/member-4.png" alt="">
+                    <p>Luke Shaw</p>
+                </div>
+            </div>
+            <div class="write-poster-container">
+                <div class="user-profile">
+                    <img src="./asset/img/profile-pic.jpg" alt="">
+                    <div>
+                        <p>Can Duy</p>
+                        <small>Public<i class="fa fa-caret-down" aria-hidden="true"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea placeholder="What's on your mind,Join" rows="3"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="./asset/img/live-video.png" alt="">Live Video</a>
+                        <a href="#"><img src="./asset/img/photo.png" alt="">Photo/Video</a>
+                        <a href="#"><img src="./asset/img/feeling.png" alt="">Feling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./asset/img/profile-pic.jpg" alt="">
+                        <div>
+                            <p>Can Duy</p>
+                            <span>June 24 2021,13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                </div>
+                <p class="post-text">Hi anh em!Hom nay toi om.</p>
+                <img src="./asset/img/feed-image-1.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="active-icons">
+                        <div><img src="./asset/img/like-blue.png" alt="">120</div>
+                        <div><img src="./asset/img/comments.png" alt="">20</div>
+                        <div><img src="./asset/img/share.png" alt="">10</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./asset/img/profile-pic.jpg" alt=""><i class="fa fa-caret-down"
+                            aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./asset/img/profile-pic.jpg" alt="">
+                        <div>
+                            <p>Can Duy</p>
+                            <span>June 24 2021,13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                </div>
+                <p class="post-text">Hi anh em!Hom nay toi om.</p>
+                <img src="./asset/img/feed-image-2.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="active-icons">
+                        <div><img src="./asset/img/like.png" alt="">120</div>
+                        <div><img src="./asset/img/comments.png" alt="">20</div>
+                        <div><img src="./asset/img/share.png" alt="">10</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./asset/img/profile-pic.jpg" alt=""><i class="fa fa-caret-down"
+                            aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./asset/img/profile-pic.jpg" alt="">
+                        <div>
+                            <p>Can Duy</p>
+                            <span>June 24 2021,13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                </div>
+                <p class="post-text">Hi anh em!Hom nay toi om.</p>
+                <img src="./asset/img/feed-image-3.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="active-icons">
+                        <div><img src="./asset/img/like.png" alt="">120</div>
+                        <div><img src="./asset/img/comments.png" alt="">20</div>
+                        <div><img src="./asset/img/share.png" alt="">10</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./asset/img/profile-pic.jpg" alt=""><i class="fa fa-caret-down"
+                            aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./asset/img/profile-pic.jpg" alt="">
+                        <div>
+                            <p>Can Duy</p>
+                            <span>June 24 2021,13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                </div>
+                <p class="post-text">Hi anh em!Hom nay toi om.</p>
+                <img src="./asset/img/feed-image-4.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="active-icons">
+                        <div><img src="./asset/img/like.png" alt="">120</div>
+                        <div><img src="./asset/img/comments.png" alt="">20</div>
+                        <div><img src="./asset/img/share.png" alt="">10</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./asset/img/profile-pic.jpg" alt=""><i class="fa fa-caret-down"
+                            aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load more</button>
+        </div>
+        <!-- right-siderbar -->
+        <div class="right-siderbar">
+            <div class="siderbar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>WillSon Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>WillSon Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="siderbar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="./asset/img/advertisement.png" class="siderbar-ads" alt="">
+            <div class="siderbar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./asset/img/member-1.png" alt="">
+                </div>
+                <p>Trinh Ba Vuong</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./asset/img/member-2.png" alt="">
+                </div>
+                <p>Pham Trung Hieu(Mõm)</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./asset/img/member-3.png" alt="">
+                </div>
+                <p>N'golo Kante</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <p>Copyright 2021 - Caans Duy</p>
+    </div> -->
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>
