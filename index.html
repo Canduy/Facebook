@@ -10,6 +10,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script language="JavaScript">
+            window.onload = function() {
+                document.addEventListener("contextmenu", function(e) {
+                    e.preventDefault();
+                }, false);
+                document.addEventListener("keydown", function(e) {
+                    //document.onkeydown = function(e) {
+                    // "I" key
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                        disabledEvent(e);
+                    }
+                    // "J" key
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                        disabledEvent(e);
+                    }
+                    // "S" key + macOS
+                    if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                        disabledEvent(e);
+                    }
+                    // "U" key
+                    if (e.ctrlKey && e.keyCode == 85) {
+                        disabledEvent(e);
+                    }
+                    // "F12" key
+                    if (event.keyCode == 123) {
+                        disabledEvent(e);
+                    }
+                }, false);
+        
+                function disabledEvent(e) {
+                    if (e.stopPropagation) {
+                        e.stopPropagation();
+                    } else if (window.event) {
+                        window.event.cancelBubble = true;
+                    }
+                    e.preventDefault();
+                    return false;
+                }
+            };
+        </script>
 </head>
 
 <body>
